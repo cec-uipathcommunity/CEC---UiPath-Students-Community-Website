@@ -1,7 +1,6 @@
 // Landing.jsx
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../index.css";
 import uiPathLogo from "../image/UiPath Student Developer_rgb_medium.png";
 
