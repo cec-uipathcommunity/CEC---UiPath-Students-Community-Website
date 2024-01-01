@@ -5,8 +5,9 @@ import "../index.css";
 import uiPathLogo from "../image/UiPath Student Developer_rgb_medium.png";
 import {Link} from "react-router-dom";
 const navigation = [
+  { name: "CEC", href: "https://www.uipath.com/" },
   { name: "About UiPath", href: "https://www.uipath.com/" },
-  { name: "Quiz", href: "/quizquest" },
+  { name: "Events", href: "/quizquest" },
   { name: "About Us", href: "/about" },
   { name: "Contact Us", href: "/contact" },
 ];
