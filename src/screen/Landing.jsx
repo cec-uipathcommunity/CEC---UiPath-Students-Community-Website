@@ -22,7 +22,7 @@ export default function Landing() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <Link href="/" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <div className="sr-only" style={{width:"100%"}}>CEC - UiPath Students Community </div>
               <img className="h-12 w-auto" src={uiPathLogo} alt="" />
             </Link>
@@ -41,7 +41,7 @@ export default function Landing() {
             {navigation.map((item) => (
               <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
                 {item.name}
@@ -50,7 +50,7 @@ export default function Landing() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
-              href="/quizquest"
+              to="/quizquest"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               Explore <span aria-hidden="true">&rarr;</span>
@@ -66,7 +66,7 @@ export default function Landing() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5">
+              <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">
                   CEC - UiPath Students Community{" "}
                 </span>
@@ -91,7 +91,7 @@ export default function Landing() {
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -100,7 +100,7 @@ export default function Landing() {
                 </div>
                 <div className="py-6">
                   <Link
-                    href="#"
+                    to="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Explore
@@ -130,7 +130,7 @@ export default function Landing() {
           to automation and its related fields!
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              <Link href="#" className="font-semibold text-indigo-600">
+              <Link to="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </Link>
@@ -145,13 +145,13 @@ export default function Landing() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
-                href="/"
+                to="/"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </Link>
               <Link
-                href="/"
+                to="/"
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
                 Learn more <span aria-hidden="true">→</span>
