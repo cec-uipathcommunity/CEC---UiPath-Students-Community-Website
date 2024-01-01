@@ -19,7 +19,7 @@ export default function Landing() {
   useEffect(()=>{
     setTimeout(()=>{
       setTypingText(typingText+title[index]);
-      if(index==title.length-1){
+      if(index===title.length-1){
         setIndex(0);
         setTypingText("");
       }
@@ -27,7 +27,7 @@ export default function Landing() {
         setIndex(index+1);
       }
     },80);
-  },[typingText]);
+  },[typingText,index]);
 
   return (
     <div className="bg-white">
