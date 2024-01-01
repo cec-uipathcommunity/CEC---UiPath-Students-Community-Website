@@ -38,7 +38,7 @@ export default function Landing() {
         >
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
-              <div className="sr-only" style={{width:"100%"}}>{typingText+" |"}</div>
+              <div className="sr-only" style={{width:"100%"}}>{typingText}<span className="animate-pules">|</span></div>
               <img className="h-12 w-auto" src={uiPathLogo} alt="" />
             </Link>
           </div>
@@ -83,7 +83,7 @@ export default function Landing() {
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">
-                  {typingText+" |"}
+                  {typingText}<span className="animate-pules">|</span>
                 </span>
                 <img
                   className="h-8 w-auto"
@@ -153,7 +153,7 @@ export default function Landing() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              {typingText+" |"}
+              {typingText}<span className="animate-pules bg-black size-">|</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Transforming the World through Automation and AI
