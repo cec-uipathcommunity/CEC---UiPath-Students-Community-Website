@@ -1,4 +1,5 @@
 import React from "react";
+import SlidoEvent from '../components/Slido';
 import { TypeAnimation } from 'react-type-animation';
 function Quiz() {
   return <div>Quiz
@@ -13,6 +14,7 @@ function Quiz() {
     backSpeed={50}
     repeat={Infinity}
 />
+<SlidoEvent />
   </div>;
 }
 
