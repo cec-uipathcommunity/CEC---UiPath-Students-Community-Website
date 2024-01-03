@@ -5,11 +5,10 @@ import "../index.css";
 import uiPathLogo from "../image/UiPath Student Developer_rgb_medium.png";
 import {Link} from "react-router-dom";
 const navigation = [
-  { name: "CEC", href: "https://www.uipath.com/" },
-  { name: "About UiPath", href: "https://www.uipath.com/" },
-  { name: "Events", href: "/quizquest" },
-  { name: "About Us", href: "/about" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Events", href: "/events" },
+  // { name: "CEC", href: "https://www.canaraengineering.in/" },
+  // { name: "About Us", href: "/about" },
+   { name: "Contact Us", href: "/contact" },
 ];
 
 export default function Landing() {
@@ -66,7 +65,7 @@ export default function Landing() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
-              to="/quizquest"
+              to="/events"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               Explore <span aria-hidden="true">&rarr;</span>
@@ -116,7 +115,7 @@ export default function Landing() {
                 </div>
                 <div className="py-6">
                   <Link
-                    to="#"
+                    to="/events"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Explore
@@ -146,7 +145,7 @@ export default function Landing() {
           to automation and its related fields!
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              <Link to="#" className="font-semibold text-indigo-600">
+              <Link to="/events/quizquest" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </Link>
@@ -159,7 +158,7 @@ export default function Landing() {
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Transforming the World through Automation and AI
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            {/* <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 to="/"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -172,7 +171,7 @@ export default function Landing() {
               >
                 Learn more <span aria-hidden="true">→</span>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div
