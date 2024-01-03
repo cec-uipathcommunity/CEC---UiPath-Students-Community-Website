@@ -13,11 +13,11 @@ function Quiz() {
   return (
     <>
       <TypingEff />
-      <div className="relative bg-white pb-[110px] pt-[120px] dark:bg-dark lg:pt-[150px]">
+      <div className="relative bg-white pb-[110px] pt-[55px] dark:bg-dark ">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 lg:w-5/12">
-              <div className="hero-content">
+            <div className="w-full px-4 lg:w-5/12 rounded border">
+              <div className="hero-content ">
                 <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
                   QuizQuest
                 </h1>
@@ -105,7 +105,7 @@ function Quiz() {
                   <img
                     src={QuizPos}
                     alt="hero"
-                    className="max-w-full lg:ml-auto"
+                    className="max-w-full lg:ml-auto rounded border"
                   />
                   <span className="absolute -bottom-8 -left-8 z-[-1]">
                     <svg
