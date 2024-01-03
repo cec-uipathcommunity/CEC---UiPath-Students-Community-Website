@@ -1,11 +1,18 @@
 import TypingEff from "../components/TypingEff";
 import Timer from "../components/Timer";
 import React from "react";
-import QuizPos from '../image/quiz_post.jpeg'
+import QuizPos from "../image/quiz_post.jpeg";
+import { useNavigate } from "react-router";
 function Quiz() {
+  const navigate = useNavigate();
+  function handleQuizClick() {
+    // const date = new Date();
+    // console.log(date.toLocaleDateString().splice(":"));
+    navigate("/events/quizquest1");
+  }
   return (
     <>
-    <TypingEff/>
+      <TypingEff />
       <div className="relative bg-white pb-[110px] pt-[120px] dark:bg-dark lg:pt-[150px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -15,57 +22,80 @@ function Quiz() {
                   QuizQuest
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
-                <div className="max-w-3xl mx-auto p-4 text-left">
-                <ul className="flex flex-wrap items-center">
-                  
-                  <li>
-                    <a
-                      href="/events/quizquest1"
-                      className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] hover:text-primary dark:text-white">
-                      
-                      <Timer deadline={new Date(2024, 0, 3, 19, 30, 0)} />
+                  <div className="max-w-3xl mx-auto p-4 text-left">
+                    <ul className="flex flex-wrap items-center">
+                      <li>
+                        <button
+                          href="/events/quizquest1"
+                          className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] hover:text-primary dark:text-white"
+                        >
+                          <Timer deadline={new Date(2024, 0, 3, 19, 30, 0)} />
+                        </button>
+                        <li>
+                          <button
+                            onClick={handleQuizClick}
+                            className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-dark lg:px-7"
+                          >
+                            Join
+                          </button>
+                        </li>
+                      </li>
+                    </ul>
 
-                    </a>
-                    <li>
-                    <a
-                      href="/events/quizquest1"
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-dark lg:px-7"
-                    >
-                      Join
-                    </a>
-                  </li>
-                  </li>
-                </ul>
-                
-      <h1 className="text-3xl font-bold mb-6">Rules and Regulations</h1>
-      <div className="mb-8">
-        
-        <h2 className="text-2xl font-bold mb-4">Event Schedule:</h2>
-        <p><strong>Online Quiz Rounds:</strong> Every Wednesday at 7:30 PM</p>
-        <p><strong>Final Round (Offline Mode):</strong> To be held at the college</p>
-      </div>
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Competition Structure:</h2>
-        <p><strong>Online Rounds (1st Round):</strong></p>
-        <p>5 weeks of online quizzes</p>
-        <p><strong>Time:</strong> 7:30 PM every Monday</p>
-        <p>Top 40% participants qualify for the Final Round</p>
-        <p><strong>Final Round (2nd Round):</strong></p>
-        <p>Offline mode at the college</p>
-      </div>
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Eligibility Criteria:</h2>
-        <p>Enrollment in the Free UiPath Automation Explore Course on UiPath Academy is mandatory.</p>
-        <p>Completion of the course by January 15, 2024, is required for Final Round eligibility.</p>
-      </div>
-      <div>
-        <h2 className="text-2xl font-bold mb-4">Prizes and Goodies:</h2>
-        <p>Exciting rewards await the champions!</p>
-      </div>
-    </div>
+                    <h1 className="text-3xl font-bold mb-6">
+                      Rules and Regulations
+                    </h1>
+                    <div className="mb-8">
+                      <h2 className="text-2xl font-bold mb-4">
+                        Event Schedule:
+                      </h2>
+                      <p>
+                        <strong>Online Quiz Rounds:</strong> Every Wednesday at
+                        7:30 PM
+                      </p>
+                      <p>
+                        <strong>Final Round (Offline Mode):</strong> To be held
+                        at the college
+                      </p>
+                    </div>
+                    <div className="mb-8">
+                      <h2 className="text-2xl font-bold mb-4">
+                        Competition Structure:
+                      </h2>
+                      <p>
+                        <strong>Online Rounds (1st Round):</strong>
+                      </p>
+                      <p>5 weeks of online quizzes</p>
+                      <p>
+                        <strong>Time:</strong> 7:30 PM every Monday
+                      </p>
+                      <p>Top 40% participants qualify for the Final Round</p>
+                      <p>
+                        <strong>Final Round (2nd Round):</strong>
+                      </p>
+                      <p>Offline mode at the college</p>
+                    </div>
+                    <div className="mb-8">
+                      <h2 className="text-2xl font-bold mb-4">
+                        Eligibility Criteria:
+                      </h2>
+                      <p>
+                        Enrollment in the Free UiPath Automation Explore Course
+                        on UiPath Academy is mandatory.
+                      </p>
+                      <p>
+                        Completion of the course by January 15, 2024, is
+                        required for Final Round eligibility.
+                      </p>
+                    </div>
+                    <div>
+                      <h2 className="text-2xl font-bold mb-4">
+                        Prizes and Goodies:
+                      </h2>
+                      <p>Exciting rewards await the champions!</p>
+                    </div>
+                  </div>
                 </p>
-               
-                
               </div>
             </div>
             <div className="hidden px-4 lg:block lg:w-1/12"></div>
@@ -120,6 +150,6 @@ function Quiz() {
       </div>
     </>
   );
-};
+}
 
 export default Quiz;
