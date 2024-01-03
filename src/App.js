@@ -6,6 +6,8 @@ import Contact from "./screen/Contact";
 import Events from "./screen/Events";
 import About from "./screen/About";
 import Error from "./screen/Error"
+import Quiz1 from "./screen/Quiz1";
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,7 @@ function App() {
           <Route exact path="/events/quizquest" element={<Quiz />}></Route>
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/contact" element={<Contact/>}></Route>
+          <Route exact path="/events/quizquest1" element={<Quiz1/>}></Route>
           <Route path="*" element={<Error />}/>
         </Routes>
       </BrowserRouter>
