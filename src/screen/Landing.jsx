@@ -3,7 +3,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../index.css";
 import uiPathLogo from "../image/UiPath Student Developer_rgb_medium.png";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 const navigation = [
   { name: "CEC", href: "https://www.uipath.com/" },
   { name: "About UiPath", href: "https://www.uipath.com/" },
@@ -14,21 +14,20 @@ const navigation = [
 
 export default function Landing() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [typingText,setTypingText] = useState("");
+  const [typingText, setTypingText] = useState("");
   const title = "CEC - UiPath Students Community ";
-  const [index,setIndex] = useState(0);
-  useEffect(()=>{
-    setTimeout(()=>{
-      setTypingText(typingText+title[index]);
-      if(index===title.length-1){
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      setTypingText(typingText + title[index]);
+      if (index === title.length - 1) {
         setIndex(0);
         setTypingText("");
+      } else {
+        setIndex(index + 1);
       }
-      else{
-        setIndex(index+1);
-      }
-    },80);
-  },[typingText,index]);
+    }, 80);
+  }, [typingText, index]);
 
   return (
     <div className="bg-white">
@@ -39,7 +38,10 @@ export default function Landing() {
         >
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
-              <div className="sr-only" style={{width:"100%"}}>{typingText}<span className="animate-pules">|</span></div>
+              <div className="sr-only" style={{ width: "100%" }}>
+                {typingText}
+                <span className="w-0 animate-pules">|</span>
+              </div>
               <img className="h-12 w-auto" src={uiPathLogo} alt="" />
             </Link>
           </div>
@@ -84,13 +86,10 @@ export default function Landing() {
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">
-                  {typingText}<span className="animate-pules">|</span>
+                  {typingText}
+                  <span className="w-0 animate-pules">|</span>
                 </span>
-                <img
-                  className="h-8 w-auto"
-                  src={uiPathLogo}
-                  alt=""
-                />
+                <img className="h-8 w-auto" src={uiPathLogo} alt="" />
               </Link>
               <button
                 type="button"
@@ -154,7 +153,8 @@ export default function Landing() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              {typingText}<span className="animate-pules bg-black size-">|</span>
+              {typingText}
+              <span className="w-0 animate-pules bg-black size-">|</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Transforming the World through Automation and AI
