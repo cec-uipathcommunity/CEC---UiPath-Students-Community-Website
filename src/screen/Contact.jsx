@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Timer from '../components/Timer'
+const Contact = () => {
 
-function Contact() {
   return (
-    <>
-      <h1>contact us</h1>
-    </>
-  )
-}
+    <div>
+      <h1>Your Countdown</h1>
+<Timer deadline={new Date(2024, 0, 3, 23, 30, 0)} />
 
-export default Contact
+    </div>
+  );
+};
+
+export default Contact;

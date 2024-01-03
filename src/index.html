@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .blog-card {
+            width: 300px;
+            padding: 1rem;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .blog-card h3 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        .blog-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .blog-card .date {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .blog-card .new-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #f44336;
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blog-card">
+            <img src="../src/image/quiz_post.jpeg" alt="Your Blog Image">
+            <h3>QuizQuest</h3>
+            <p>The Department of CSE organised a talk on "An Introduction to Automation Using UiPath". Mr. Arpan Bangera, programmer Analyst/Senior RPA developer at Novigo Solutions Pvt. Ltd. ...</p>
+        <div class="date">10 July 2022</div>
+            <div class="new-badge">New</div>
+        </div>
+        <div class="blog-card">
+            <img src="../src/image/intro_uipath.jpg" alt="Your Blog Image">
+            <h3>An Introduction to RPA Using UiPath Studio</h3>
+            <p>The Department of CSE organised a talk on "An Introduction to Automation Using UiPath". Mr. Arpan Bangera, programmer Analyst/Senior RPA developer at Novigo Solutions Pvt. Ltd. ...</p>
+        <div class="date">10 July 2022</div>
+            <div class="new-badge">New</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<div class="container">
+    <div class="blog-card">
+        <Image src="../src/image/quiz_post.jpeg" alt="Your Blog Image"/>
+        <h3>QuizQuest</h3>
+        <p>The Department of CSE organised a talk on "An Introduction to Automation Using UiPath". Mr. Arpan Bangera, programmer Analyst/Senior RPA developer at Novigo Solutions Pvt. Ltd. ...</p>
+    <div class="date">10 July 2022</div>
+        <div class="new-badge">New</div>
+    </div>
+    <div class="blog-card">
+        <img src="../src/image/intro_uipath.jpg" alt="Your Blog Image">
+        <h3>An Introduction to RPA Using UiPath Studio</h3>
+        <p>The Department of CSE organised a talk on "An Introduction to Automation Using UiPath". Mr. Arpan Bangera, programmer Analyst/Senior RPA developer at Novigo Solutions Pvt. Ltd. ...</p>
+    <div class="date">10 July 2022</div>
+        <div class="new-badge">New</div>
+    </div>
+</div>
