@@ -1,13 +1,13 @@
 import React from 'react';
 import '../styles/dashboard.css';
-import Timer from '../components/Timer';
+import QuizTimer from '../components/QuizTimer';
 import Slido from '../components/Slido';
 
 function QuizDashboard() {
   return (
     <div className="body-container">
       <div className="headerq">
-        <Timer deadline={new Date(2024, 0, 10, 19, 30, 0)} />
+        <QuizTimer />
       </div>
       <div className="bodyq">
         <Slido />

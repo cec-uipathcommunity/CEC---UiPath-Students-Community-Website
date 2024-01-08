@@ -1,5 +1,5 @@
 import React from 'react';
-import sak from '../image/sak_photo.jpeg'
+// import sak from '../image/sak_photo.jpeg'
 import muk from '../image/mukesh.jpeg'
 import arp from '../image/arpan.jpeg'
 import Footer from '../components/Footer';
@@ -19,12 +19,12 @@ const Hero = () => {
                         <p className="max-w-md mt-4 md:mt-6 text-sm md:text-base leading-6 md:leading-7 text-gray-600 font-inter">Transforming the World through Automation and AI</p>
                         <div className="mt-8 lg:mt-12 lg:flex lg:items-center">
                             <div className="flex justify-center flex-shrink-0 -space-x-4 overflow-hidden lg:justify-start">
-                                <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={sak} alt="sak" />
+                                {/* <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={sak} alt="sak" /> */}
                                 <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={arp} alt="arp" />
                                 <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={muk} alt="muk" />
                             </div>
 
-                            <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">Connect with <span className="font-bold">our Experts</span> and Explore</p>
+                            <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">Get<span className="font-bold"> Trained </span> by Industrial Experts</p>
                         </div>
                         <div class="relative inline-flex mt-10 group">
 

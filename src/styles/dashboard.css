@@ -1,18 +1,5 @@
-.body-container {
-    height: 100vh;  
-    display: flex;  
-    flex-direction: column;
-    box-sizing: border-box;
-  }
-  
-  .headerq {
-    height: 5%;  
-  }
-  
-  .bodyq {
-    flex: 1;  
-  }
-  
- 
- 
-  
+.headerq{
+  height: 90px;
+  font-size:xx-large;
+  color: red;
+}
