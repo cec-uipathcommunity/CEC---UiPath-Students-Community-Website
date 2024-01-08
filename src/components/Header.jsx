@@ -20,7 +20,7 @@ function Header() {
 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="relative flex items-center justify-between">
                         <div className="flex-shrink-0">
-                            <a href="#" title="" className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
+                            <a href="https://cecuipathstudentscommunity.netlify.app/" title="" className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
                                 <img className="w-auto h-14" src={Logo} alt="" />
                             </a>
                         </div>
@@ -35,24 +35,24 @@ function Header() {
 
                         <div className={`lg:hidden absolute top-16 inset-x-0 z-10 bg-white ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
                             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                                <a href="#" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">Events</a>
-                                <a href="#" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">About us</a>
-                                <a href="#" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">Contact</a>
+                                <a href="/events" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">Events</a>
+                                <a href="/aboutus" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">About us</a>
+                                <a href="/contact" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">Contact</a>
                                 {/* Add more menu items */}
                             </div>
                         </div>
 
                         <div className="hidden lg:absolute lg:inset-y-0 lg:flex lg:items-center lg:justify-center lg:space-x-12 lg:-translate-x-1/2 lg:left-1/2">
-                            <a href="#" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Events </a>
-                            <a href="#" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> About us </a>
-                            <a href="#" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Contact </a>
+                            <a href="/events" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Events </a>
+                            <a href="/aboutus" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> About us </a>
+                            <a href="/contact" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Contact </a>
                             {/* Other desktop menu items */}
                         </div>
 
                         <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
                             {/* <a href="#" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Login </a> */}
 
-                            <a href="#" title="" className="px-5 py-2 text-base font-semibold leading-7 text-gray-900 transition-all duration-200 bg-transparent border border-gray-900 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white" role="button">
+                            <a href="/join" title="" className="px-5 py-2 text-base font-semibold leading-7 text-gray-900 transition-all duration-200 bg-transparent border border-gray-900 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white" role="button">
                                 Join community
                             </a>
                             {/* <div className={darkMode ? 'dark' : 'light'}>

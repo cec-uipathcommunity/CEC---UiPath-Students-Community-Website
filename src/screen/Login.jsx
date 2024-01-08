@@ -30,8 +30,9 @@ const Login = () => {
 
       if (responseJSON.success) {
         localStorage.setItem("safeToken", responseJSON.authToken);
-    localStorage.setItem("userName", responseJSON.userName);
-        navigate("/quiz22");
+        localStorage.setItem("userName", responseJSON.userName);
+
+        navigate("/events/quizquest/quizdashboard");
       } else {
         setErrorMsge(responseJSON.message || "Login Failed");
       }

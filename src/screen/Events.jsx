@@ -2,7 +2,6 @@ import React from "react";
 import Blog from "../components/Blog";
 import quizImg from "../image/quiz_post.jpeg";
 import intro_uipath from "../image/intro_uipath.jpg";
-
 const Events = () => {
   return (
     <>

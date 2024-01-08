@@ -1,13 +1,10 @@
-import { useState } from 'react';
 import React from 'react';
 import sak from '../image/sak_photo.jpeg'
 import Footer from '../components/Footer';
-import Header from "../components/Header"
 const Hero = () => {
-    
+
     return (<>
         <div className="h-screen bg-gray-50">
-            <Header/>
             <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-6xl">
                 <section className="relative py-24 sm:py-27 lg:pt-25 xl:pb-12 flex flex-col lg:flex-row items-center justify-center lg:justify-start">
                     <div className="max-w-3xl text-center lg:text-left">
@@ -31,24 +28,31 @@ const Hero = () => {
 
                             <div class="absolute  transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt "></div>
 
-                            <a href="#" title="" class="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
+                            <a href="/about" title="" class="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
                                 Learn More
                             </a>
                         </div>
                     </div>
 
-                    <div className="mt-6 md:mt-10 lg:mt-0 flex justify-center">
-                        <img className="object-cover object-top w-104 h-auto mx-auto lg:max-w-full" src="https://png.pngtree.com/png-vector/20220802/ourmid/pngtree-3d-rpa-cute-robot-cartoon-sky-blue-gradients-color-chatbot-png-image_6093532.png" alt="Img" />
-                    </div>
+                    {/* <div className="mt-6 md:mt-10 lg:mt-0 flex justify-center">
+      <img
+        className="object-cover object-top w-full h-auto mx-auto max-w-full sm:max-w-56 md:max-w-80 lg:max-w-full sm:max-h-56 md:max-h-80 lg:max-h-full"
+        src="https://png.pngtree.com/png-vector/20220802/ourmid/pngtree-3d-rpa-cute-robot-cartoon-sky-blue-gradients-color-chatbot-png-image_6093532.png"
+        alt="Img"
+      />
+    </div> */}
 
+<div class="mt-8 md:absolute md:mt-0 md:top-32 lg:top-0 md:right-0">
+                    <img class="w-full max-w-xs mx-auto lg:max-w-lg xl:max-w-xl" src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png" alt="" />
+                </div>
                 </section>
 
-                   
 
-            </div> 
+
+            </div>
         </div>
-        <Footer/>
-        </>
+        <Footer />
+    </>
     );
 };
 

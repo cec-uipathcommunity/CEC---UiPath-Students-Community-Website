@@ -157,7 +157,7 @@ function OurTeam() {
               </a>
               <div class="p-5">
                 <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="">{people[1].name}</a>
+                  <a href="www.linkedin.com/in/sakshath-rai-k">{people[1].name}</a>
                 </h3>
                 <span class="text-gray-500 dark:text-gray-400">
                 {people[1].role}
@@ -169,7 +169,7 @@ function OurTeam() {
                 <div className="flex justify-center sm:justify-start">  <ul class="flex space-x-4 sm:mt-0">
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -188,7 +188,7 @@ function OurTeam() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -203,7 +203,7 @@ function OurTeam() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -222,7 +222,7 @@ function OurTeam() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -244,7 +244,7 @@ function OurTeam() {
               </div>
             </div>
             <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
+              <a href="www.linkedin.com/in/">
               <div className="flex justify-center sm:justify-start">
                 <img
                   class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg ims"
@@ -255,7 +255,7 @@ function OurTeam() {
               </a>
               <div class="p-5">
                 <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="#">{people[2].name}</a>
+                  <a href="www.linkedin.com/in/">{people[2].name}</a>
                 </h3>
                 <span class="text-gray-500 dark:text-gray-400">
                 {people[2].role}
@@ -267,7 +267,7 @@ function OurTeam() {
                 <div className="flex justify-center sm:justify-start">  <ul class="flex space-x-4 sm:mt-0">
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -286,7 +286,7 @@ function OurTeam() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -301,7 +301,7 @@ function OurTeam() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -320,7 +320,7 @@ function OurTeam() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -342,7 +342,7 @@ function OurTeam() {
               </div>
             </div>
             <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
+              <a href="www.linkedin.com/in/">
               <div className="flex justify-center sm:justify-start">
   <img
     className="w-200 h-300 rounded-lg sm:rounded-none sm:rounded-l-lg ims"
@@ -353,7 +353,7 @@ function OurTeam() {
               </a>
               <div class="p-5">
                 <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="#">{people[3].name}</a>
+                  <a href="www.linkedin.com/in/">{people[3].name}</a>
                 </h3>
                 <span class="text-gray-500 dark:text-gray-400">
                 {people[3].role}
@@ -365,7 +365,7 @@ function OurTeam() {
                 <div className="flex justify-center sm:justify-start"><ul class="flex space-x-4 sm:mt-0">
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -384,7 +384,7 @@ function OurTeam() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -399,7 +399,7 @@ function OurTeam() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
@@ -418,7 +418,7 @@ function OurTeam() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="www.linkedin.com/in/"
                       class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                     >
                       <svg
