@@ -4,6 +4,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../index.css";
 import uiPathLogo from "../image/UiPath Student Developer_rgb_medium.png";
 import { Link } from "react-router-dom";
+import Benefits from "../components/benefits";
+import { benefitOne, benefitTwo } from "../components/data";
+import Login from "./Login";
+import Land from "../components/land";
 const navigation = [
   { name: "Events", href: "/events" },
   // { name: "CEC", href: "https://www.canaraengineering.in/" },
@@ -13,22 +17,25 @@ const navigation = [
 
 export default function Landing() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [typingText, setTypingText] = useState("");
-  const title = "CEC - UiPath Students Community ";
-  const [index, setIndex] = useState(0);
-  useEffect(() => {
-    setTimeout(() => {
-      setTypingText(typingText + title[index]);
-      if (index === title.length - 1) {
-        setIndex(0);
-        setTypingText("");
-      } else {
-        setIndex(index + 1);
-      }
-    }, 80);
-  }, [typingText, index]);
+  // const [typingText, setTypingText] = useState("");
+  // const title = "CEC - UiPath Students Community ";
+  // const [index, setIndex] = useState(0);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setTypingText(typingText + title[index]);
+  //     if (index === title.length - 1) {
+  //       setIndex(0);
+  //       setTypingText("");
+  //     } else {
+  //       setIndex(index + 1);
+  //     }
+  //   }, 80);
+  // }, [typingText, index]);
 
   return (
+    <> 
+    <Land/>
+    <Login/>
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
@@ -38,8 +45,7 @@ export default function Landing() {
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
               <div className="sr-only" style={{ width: "100%" }}>
-                {typingText}
-                <span className="w-0 animate-pules">|</span>
+                
               </div>
               <img className="h-12 w-auto" src={uiPathLogo} alt="" />
             </Link>
@@ -85,8 +91,7 @@ export default function Landing() {
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">
-                  {typingText}
-                  <span className="w-0 animate-pules">|</span>
+                  
                 </span>
                 <img className="h-8 w-auto" src={uiPathLogo} alt="" />
               </Link>
@@ -152,8 +157,7 @@ export default function Landing() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              {typingText}
-              <span className="w-0 animate-pules bg-black size-">|</span>
+              
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Transforming the World through Automation and AI
@@ -187,6 +191,9 @@ export default function Landing() {
           />
         </div>
       </div>
-    </div>
+
+   
+      </div> <Benefits data={benefitOne} />
+      <Benefits imgPos="right" data={benefitTwo} />  </>
   );
 }

@@ -15,6 +15,7 @@ const Blog = (props) => {
           <div className="new-badge">{badgen}</div>
         </div>
       </div>
+      
     </>
   );
 };

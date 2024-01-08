@@ -30,7 +30,7 @@ const Events = () => {
               "Join us every Wednesday at 7:30 PM for online quiz rounds, culminating in a final offline round at the college."
             }
             dates={"Every Wednesday of Jan 2024"}
-            badgen={"Upcoming"}
+            badgen={"Ongoing"}
           />
           <Blog
             imgs={intro_uipath}

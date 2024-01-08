@@ -1,8 +1,9 @@
 import React from 'react'
+import '../styles/TypeEff.css'
 import { TypeAnimation } from 'react-type-animation';
 function TypingEff() {
   return (
-    <div>
+    <div className='effBox'>
       <TypeAnimation
     sequence={[
         'CEC-UiPath Student Community',
