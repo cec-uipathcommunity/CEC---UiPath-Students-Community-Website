@@ -10,6 +10,7 @@ import Error from "./screen/Error";
 import Login from "./screen/Login";
 import QuizDashboard from "./screen/QuizDashboard";
 import ProtectedRoute from "./ProtectedRoute"; 
+import ComingSoon from "./screen/ComingSoon";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/events/quizquest" element={<Quiz />}></Route>
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/comingsoon" element={<ComingSoon />}></Route>
           <Route path="/events/quizquest/quizdashboard" element={<ProtectedRoute><QuizDashboard /></ProtectedRoute>} />
           <Route exact path="/login" element={<Login />}></Route>
           <Route path="*" element={<Error />} />
