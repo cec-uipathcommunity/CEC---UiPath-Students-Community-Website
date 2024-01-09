@@ -19,18 +19,18 @@ const Hero = () => {
                         <p className="max-w-md mt-4 md:mt-6 text-sm md:text-base leading-6 md:leading-7 text-gray-600 font-inter">Transforming the World through Automation and AI</p>
                         <div className="mt-8 lg:mt-12 lg:flex lg:items-center">
                             <div className="flex justify-center flex-shrink-0 -space-x-4 overflow-hidden lg:justify-start">
-                                {/* <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={sak} alt="sak" /> */}
-                                <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={arp} alt="arp" />
-                                <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={muk} alt="muk" />
+                                {/* <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={sak} alt="" /> */}
+                                <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={arp} alt="" />
+                                <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={muk} alt="" />
                             </div>
 
-                            <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">Get<span className="font-bold"> Trained </span> by Industrial Experts</p>
+                            <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">Connect with <span className="font-bold">our Experts</span> and Explore</p>
                         </div>
                         <div class="relative inline-flex mt-10 group">
 
                             <div class="absolute  transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt "></div>
 
-                            <a href="/comingsoon" title="" class="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
+                            <a href="/about" title="" class="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
                                 Learn More
                             </a>
                         </div>
