@@ -15,6 +15,9 @@ const User = require("./models/User");
 
 app.use(express.json());
 
+app.get("/",(req,res)=>{
+  res.send({msg:"hello"})
+})
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
