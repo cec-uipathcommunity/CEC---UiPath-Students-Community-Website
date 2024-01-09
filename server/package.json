@@ -4,8 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build":"npm install"
+        "start": "./node_modules/.bin/netlify-lambda serve src",
+        "build": "netlify deploy --prod",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Sakshath",
     "license": "ISC",
@@ -14,6 +15,9 @@
         "dotenv": "^16.3.1",
         "express": "^4.18.2",
         "jsonwebtoken": "^9.0.2",
-        "mongoose": "^8.0.3"
+        "mongoose": "^8.0.3",
+        "netlify-cli": "^17.12.0",
+        "netlify-lambda": "^2.0.16",
+        "serverless-http": "^3.2.0"
     }
 }
