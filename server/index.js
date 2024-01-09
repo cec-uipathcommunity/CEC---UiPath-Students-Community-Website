@@ -12,13 +12,13 @@ mongoose.connect(process.env.MONGO_URL)
   .catch((err) => console.error("Database error:", err));
 
 
-const User = require("../models/User");
+const User = require("./models/User");
 
 app.use(express.json());
 
 const router = express.Router();
 router.get("/",(req,res)=>{
-  res.json({msg:"hello"})
+  res.send({msg:"hello"})
 })
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
