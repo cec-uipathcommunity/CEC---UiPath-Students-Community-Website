@@ -5,7 +5,7 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const app = express();
 app.use(cors());
-
+const PORT = process.env.PORT||3000;
 mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("Database connected"))
   .catch((err) => console.error("Database error:", err));
@@ -63,6 +63,6 @@ function verifyToken(req, res, next) {
   }
 }
 
-app.listen(3000, () => {
-  console.log('Server started on port 3000');
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });
