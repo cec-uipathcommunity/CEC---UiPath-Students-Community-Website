@@ -24,7 +24,7 @@ const Hero = () => {
                                 <img className="inline-block rounded-full w-14 h-14 ring-2 ring-white" src={muk} alt="" />
                             </div>
 
-                            <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">Connect with <span className="font-bold">our Experts</span> and Explore</p>
+                            <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">Get trained by<span className="font-bold"> our experts </span>and explore further.</p>
                         </div>
                         <div class="relative inline-flex mt-10 group">
 

@@ -3,14 +3,16 @@ import Blog from "../components/Blog";
 import quizImg from "../image/quiz_post.jpeg";
 import intro_uipath from "../image/intro_uipath.jpg";
 const Events = () => {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
   return (
     <>
       <div>
-        <div className="-mx-4">
+        <div className="-mx-4" onClick={() => openInNewTab("")}>
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
               <span className="mb-2 block text-lg font-semibold text-primary">
-                Our Blogs
               </span>
               <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
                 Our Recent Events

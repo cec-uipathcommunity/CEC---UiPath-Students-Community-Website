@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Quiz from "./screen/Quiz";
+import Quiz from "./screen/Quiz1";
 import Landing from "./screen/Landing";
 import Contact from "./screen/Contact";
 import Events from "./screen/Events";

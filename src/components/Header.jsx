@@ -36,16 +36,16 @@ function Header() {
                         <div className={`lg:hidden absolute top-16 inset-x-0 z-10 bg-white ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
                             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                                 <a href="/events" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">Events</a>
-                                <a href="/aboutus" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">About us</a>
-                                <a href="/contact" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">Contact</a>
+                                <a href="/comingsoon" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">About us</a>
+                                <a href="/comingsoon" className="block px-3 py-2 text-base font-pj text-gray-900 rounded-md hover:bg-gray-50">Contact</a>
                                 {/* Add more menu items */}
                             </div>
                         </div>
 
                         <div className="hidden lg:absolute lg:inset-y-0 lg:flex lg:items-center lg:justify-center lg:space-x-12 lg:-translate-x-1/2 lg:left-1/2">
                             <a href="/events" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Events </a>
-                            <a href="/aboutus" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> About us </a>
-                            <a href="/contact" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Contact </a>
+                            <a href="/comingsoon" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> About us </a>
+                            <a href="/comingsoon" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Contact </a>
                             {/* Other desktop menu items */}
                         </div>
 

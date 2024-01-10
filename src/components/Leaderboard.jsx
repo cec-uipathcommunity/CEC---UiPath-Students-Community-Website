@@ -16,6 +16,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+.leaderboard-root{
+  height:auto;
 }
 
 main {
@@ -28,6 +32,14 @@ main {
   flex-direction: column;
   align-items: center;
   border-radius: 0.5rem;
+}
+h3{
+  font-family: "Rubik", sans-serif;
+  font-weight:900;
+  font-size: 0.9rem;
+  color: #141a39;
+  text-transform: uppercase;
+  cursor: default;
 }
 
 #header {
@@ -59,6 +71,7 @@ main {
 
 h1 {
   font-family: "Rubik", sans-serif;
+  font-weight:900;
   font-size: 1.7rem;
   color: #141a39;
   text-transform: uppercase;
