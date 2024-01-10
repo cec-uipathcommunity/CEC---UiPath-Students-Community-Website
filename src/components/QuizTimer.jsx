@@ -10,7 +10,7 @@ const QuizTimer = () => {
       const now = new Date();
       const currentMinute = now.getMinutes();
       if (currentMinute === 30) {
-        setMessage('Welcome to Quiz Quest! ');
+        setMessage('Welcome to Quiz Quest! Week 02');
         setTimeout(() => {
           setShowTimer(true);
         }, 3000); 
@@ -19,35 +19,35 @@ const QuizTimer = () => {
       } else if (currentMinute === 36) {
         setMessage('2nd Question');
         
-      }else if (currentMinute === 36) {
+      }else if (currentMinute === 37) {
         setMessage('3nd Question');
         
-      }else if (currentMinute === 36) {
+      }else if (currentMinute === 38) {
         setMessage('4nd Question');
         
-      }else if (currentMinute === 36) {
+      }else if (currentMinute === 39) {
         setMessage('5nd Question');
         
-      }else if (currentMinute === 36) {
+      }else if (currentMinute === 40) {
         setMessage('6nd Question');
         
       }
-      else if (currentMinute === 36) {
+      else if (currentMinute === 41) {
         setMessage('7nd Question');
         
       }
-      else if (currentMinute === 36) {
+      else if (currentMinute === 42) {
         setMessage('8nd Question');
         
       }
-      else if (currentMinute === 36) {
+      else if (currentMinute === 43) {
         setMessage('9nd Question');
         
       }
-      else if (currentMinute === 36) {
+      else if (currentMinute === 44) {
         setMessage('10nd Question');
         
-      } else if (currentMinute === 3) {
+      } else if (currentMinute === 45) {
         setMessage('Thank you for attending');
         clearInterval(intervalId); 
       }

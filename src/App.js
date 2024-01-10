@@ -8,7 +8,6 @@ import Events from "./screen/Events";
 import About from "./screen/About";
 import Error from "./screen/Error";
 import Login from "./screen/Login";
-import QuizDashboard from "./screen/QuizDashboard";
 import ProtectedRoute from "./ProtectedRoute"; 
 import ComingSoon from "./screen/ComingSoon";
 
@@ -19,11 +18,10 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Landing />}></Route>
           <Route exact path="/events" element={<Events />}></Route>
-          <Route exact path="/events/quizquest" element={<Quiz />}></Route>
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/comingsoon" element={<ComingSoon />}></Route>
-          <Route path="/events/quizquest/quizdashboard" element={<ProtectedRoute><QuizDashboard /></ProtectedRoute>} />
+          <Route path="/events/quizquest/quizdashboard" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
           <Route exact path="/login" element={<Login />}></Route>
           <Route path="*" element={<Error />} />
         </Routes>
