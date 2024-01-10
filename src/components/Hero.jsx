@@ -2,7 +2,7 @@ import React from 'react';
 // import sak from '../image/sak_photo.jpeg'
 import muk from '../image/mukesh.jpeg'
 import arp from '../image/arpan.jpeg'
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 const Hero = () => {
 
     return (<>
@@ -54,7 +54,7 @@ const Hero = () => {
 
             </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
     </>
     );
 };

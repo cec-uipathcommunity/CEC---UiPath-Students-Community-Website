@@ -1,12 +1,12 @@
 require("dotenv").config();
 const express = require("express");
-const serverless = require("serverless-http");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const app = express();
 app.use(cors());
-const PORT = process.env.PORT||3000;
+
+
 mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("Database connected"))
   .catch((err) => console.error("Database error:", err));
@@ -15,12 +15,7 @@ mongoose.connect(process.env.MONGO_URL)
 const User = require("./models/User");
 
 app.use(express.json());
-
-const router = express.Router();
-router.get("/",(req,res)=>{
-  res.send({msg:"hello"})
-})
-router.post("/login", async (req, res) => {
+app.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -43,7 +38,8 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.get("/events/quizquest/quizdashboard/", verifyToken, (req, res) => {
+
+app.get("/events/quizquest/quizdashboard/", verifyToken, (req, res) => {
   const userId = req.userId;
   const userName = req.userName;
 
@@ -67,10 +63,7 @@ function verifyToken(req, res, next) {
     }
   }
 }
-
-app.use("/.netlify/functions/api",router);
-// app.listen(PORT, () => {
-//   console.log(`Server started on port ${PORT}`);
-// });
-
-module.exports.handler = serverless(app);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running ${PORT} `);
+});

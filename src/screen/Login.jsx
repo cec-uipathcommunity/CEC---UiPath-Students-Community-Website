@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const FETCH_BASE_URL = process.env.REACT_APP_FETCH_BASE_URL || "http://localhost:3000";
+const FETCH_BASE_URL = "http://localhost:5000";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -16,6 +16,7 @@ const Login = () => {
       setErrorMsge("Please Fill The Form");
       return;
     }
+    console.log(userData)
 
     try {
       const response = await fetch(`${FETCH_BASE_URL}/login`, {
@@ -25,7 +26,7 @@ const Login = () => {
         },
         body: JSON.stringify(userData),
       });
-
+      console.log(response)
       const responseJSON = await response.json();
 
       if (responseJSON.success) {
@@ -47,11 +48,10 @@ const Login = () => {
 
   return (
     <div>
-      
       <section className="bg-gray-50 dark:bg-gray-900">
-      <div className="flex items-center justify-center w-full h-screen bg-gray-50 dark:bg-gray-900">
-    <div className="max-w-md mx-auto px-6 py-8 md:py-16 bg-white rounded-lg shadow dark:border dark:bg-gray-800 dark:border-gray-700">
-      <div className="space-y-6 md:space-y-8 sm:p-8">
+        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+            <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Quiz Quest
               </h1>
