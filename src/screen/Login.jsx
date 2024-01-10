@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/login.css";
 const FETCH_BASE_URL =
   process.env.REACT_APP_FETCH_BASE_URL || "http://localhost:5000";
 // console.log(FETCH_BASE_URL);
+
 const Login = () => {
   const navigate = useNavigate();
   const [errorMsge, setErrorMsge] = useState("");
@@ -46,10 +46,23 @@ const Login = () => {
   const changeUserInfo = (field, value) => {
     setUserData({ ...userData, [field]: value });
   };
+  const styles = `
+.login-container {
+   height: 100vh;
+   display: flex;
+  justify-content: center;
+   align-items: center;
+}
 
+.login-componenct {
+  min-width: 300px;
+}
+`;
   return (
+    
     <div className="login-container">
-      <section className=" bg-gray-50 dark:bg-gray-900">
+      <style>{styles}</style>
+      <section className=" bg-white dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className="login-componenct p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -96,6 +109,7 @@ const Login = () => {
                     required
                   />
                 </div>
+                
                 <button
                   type="submit"
                   className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
@@ -111,5 +125,4 @@ const Login = () => {
     </div>
   );
 };
-
 export default Login;

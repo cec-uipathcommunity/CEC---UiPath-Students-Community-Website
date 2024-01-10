@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
+import React from 'react';
 
-* {
+const Leaderboard1 = () => {
+  const styles = `
+  * {
   font-size: 62, 5%;
   box-sizing: border-box;
   margin: 0;
@@ -26,6 +16,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+.leaderboard-root{
+  height:auto;
 }
 
 main {
@@ -38,6 +32,14 @@ main {
   flex-direction: column;
   align-items: center;
   border-radius: 0.5rem;
+}
+h3{
+  font-family: "Rubik", sans-serif;
+  font-weight:900;
+  font-size: 0.9rem;
+  color: #141a39;
+  text-transform: uppercase;
+  cursor: default;
 }
 
 #header {
@@ -69,6 +71,7 @@ main {
 
 h1 {
   font-family: "Rubik", sans-serif;
+  font-weight:900;
   font-size: 1.7rem;
   color: #141a39;
   text-transform: uppercase;
@@ -189,16 +192,18 @@ td {
 }
 
 .exit {
-  width: 11rem;
-  height: 3rem;
-  font-family: "Rubik", sans-serif;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  color: #7e7f86;
-  border: 0;
-  background-color: #fff;
-  border-radius: 2rem;
-  cursor: pointer;
+    width: 11rem;
+    height: 3rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #FDFEFE;
+    border: 0;
+    background-color: #DC143C;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  or: pointer;
 }
 
 .exit:hover {
@@ -239,61 +244,64 @@ td {
     * {
       font-size: 45%;
     }
-}
-    </style>
-  </head>
-  <body>
-    <main>
-      <div id="header">
-        <h1>Ranking</h1>
-        <button class="share">
-          <i class="ph ph-share-network"></i>
-        </button>
-      </div>
+} 
+
+  `;
+  const goToHomePage = () => {
+    window.location.href = '/';
+  };
+  const goToQuizEvents = () => {
+    window.location.href = '/events/quizquest/leaderboard2'; 
+  };
+  return (
+    <div>
+      <style>{styles}</style>
+      <main className="leaderboard-root">
+      <header id="header">
+        <h1>Leaderboard</h1>
+        <h3>Quiz Quest - Week 01</h3>
+      </header>
       <div id="leaderboard">
-        <div class="ribbon"></div>
+        <div className="ribbon"></div>
         <table>
           <tr>
-            <td class="number">1</td>
-            <td class="name">Lee Taeyong</td>
-            <td class="points">
-              258.244 <img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal"/>
+            <td className="number">1</td>
+            <td className="name">Shreesha</td>
+            <td className="points">
+            4/5 - 0:35
+              <img className="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal" />
             </td>
           </tr>
           <tr>
-            <td class="number">2</td>
-            <td class="name">Mark Lee</td>
-            <td class="points">258.242</td>
+            <td className="number">2</td>
+            <td className="name">Achala P R</td>
+            <td className="points">4/5 - 0:35</td>
           </tr>
           <tr>
-            <td class="number">3</td>
-            <td class="name">Xiao Dejun</td>
-            <td class="points">258.223</td>
+            <td className="number">3</td>
+            <td className="name">Srushti Rajendra Naik</td>
+            <td className="points">4/5 - 0:39</td>
           </tr>
           <tr>
-            <td class="number">4</td>
-            <td class="name">Qian Kun</td>
-            <td class="points">258.212</td>
+            <td className="number">4</td>
+            <td className="name">Praharsh T</td>
+            <td className="points">4/5 - 0:43</td>
           </tr>
           <tr>
-            <td class="number">5</td>
-            <td class="name">Johnny Suh</td>
-            <td class="points">258.208</td>
+            <td className="number">5</td>
+            <td className="name">Rinisha S Prabhu</td>
+            <td className="points">4/5 - 0:44</td>
           </tr>
         </table>
         <div id="buttons">
-          <button class="exit">Exit</button>
-          <button class="continue">Continue</button>
-        </div>
+          <button onClick={goToHomePage} className="exit">Exit</button>
+<button onClick={goToQuizEvents} className="continue">Week 02</button> 
+        </div> 
       </div>
     </main>
-  </body>
-</html>
+    </div>
+  );
+};
 
-
-
-
-
-
-
+export default Leaderboard1;
 
