@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const FETCH_BASE_URL =process.env.REACT_APP_FETCH_BASE_URL || "http://localhost:5000";
-
+// console.log(FETCH_BASE_URL);
 const Login = () => {
   const navigate = useNavigate();
   const [errorMsge, setErrorMsge] = useState("");
