@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const FETCH_BASE_URL =
   process.env.REACT_APP_FETCH_BASE_URL || "http://localhost:5000";
-// console.log(FETCH_BASE_URL);
 
 const Login = () => {
   const navigate = useNavigate();
@@ -17,7 +16,6 @@ const Login = () => {
       setErrorMsge("Please Fill The Form");
       return;
     }
-    console.log(userData);
 
     try {
       const response = await fetch(`${FETCH_BASE_URL}/login`, {
@@ -27,14 +25,13 @@ const Login = () => {
         },
         body: JSON.stringify(userData),
       });
-      console.log(response);
       const responseJSON = await response.json();
-
       if (responseJSON.success) {
         localStorage.setItem("safeToken", responseJSON.authToken);
         localStorage.setItem("userName", responseJSON.userName);
-
-        navigate("/events/quizquest/quizdashboard");
+        navigate("/events/quizquest/quizdashboard", {
+          state: { userName: responseJSON.userName },
+        });
       } else {
         setErrorMsge(responseJSON.message || "Login Failed");
       }
@@ -52,7 +49,7 @@ const Login = () => {
    display: flex;
   justify-content: center;
    align-items: center;
-}
+}                                                            \
 
 .login-componenct {
   min-width: 300px;

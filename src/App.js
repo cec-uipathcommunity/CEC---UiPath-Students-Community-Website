@@ -12,8 +12,10 @@ import ComingSoon from "./screen/ComingSoon";
 import QuizDashboard from "./screen/QuizDashboard";
 import Leaderboard1 from "./screen/leaderboard/leaderboard1";
 import Leaderboard2 from "./screen/leaderboard/leaderboard2";
+import AdminDashboard from "./screen/AdminDashboard";
 
 function App() {
+  
   return (
     <div className="App">
       <BrowserRouter>
@@ -23,6 +25,7 @@ function App() {
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/comingsoon" element={<ComingSoon />}></Route>
+          <Route path="/admin/adddetails" element={<AdminDashboard />} />
           <Route exact path="/events/quizquest/leaderboard1" element={<Leaderboard1/>}></Route>
           <Route exact path="/events/quizquest/leaderboard2" element={<Leaderboard2/>}></Route>
           <Route path="/events/quizquest/quizdashboard" element={<ProtectedRoute><QuizDashboard /></ProtectedRoute>} />
