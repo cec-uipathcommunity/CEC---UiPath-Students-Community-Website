@@ -10,6 +10,7 @@ const QuizDashboard = () => {
     userEmail: "",
     quizDetails: [],
   });
+
   useEffect(() => {
     const fetchUserInformation = async () => {
       try {
@@ -22,8 +23,12 @@ const QuizDashboard = () => {
 
         const responseJSON = await response.json();
 
-        if (responseJSON.success) {
+        if (response.ok) {
           setUserDetails(responseJSON.user);
+        } else if (response.status === 401) {
+          // Token expired, clear it from localStorage and redirect to login page
+          localStorage.removeItem("safeToken");
+          window.location.href = "/login"; // Redirect to login page
         } else {
           setErrorMsge(responseJSON.message || "Failed to load user information");
         }
@@ -40,8 +45,7 @@ const QuizDashboard = () => {
 
   return (
     <div>
-      
-      <QuizNav userName={userName}/>
+      <QuizNav userName={userName} />
       <Dashboard quizDetails={quizDetails} error={errorMsge} />
     </div>
   );

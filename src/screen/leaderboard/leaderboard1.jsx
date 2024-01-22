@@ -248,7 +248,7 @@ td {
 
   `;
   const goToHomePage = () => {
-    window.location.href = '/';
+    window.location.href = '/events/quizquest/quizdashboard';
   };
   const goToQuizEvents = () => {
     window.location.href = '/events/quizquest/leaderboard2'; 

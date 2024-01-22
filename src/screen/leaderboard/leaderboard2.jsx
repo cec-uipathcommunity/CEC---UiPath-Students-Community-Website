@@ -247,7 +247,7 @@ td {
 
 
   const goToHomePage = () => {
-    window.location.href = '/';
+    window.location.href = '/events/quizquest/quizdashboard';
   };
   const goprev = () => {
     window.location.href = '/events/quizquest/leaderboard1'; 

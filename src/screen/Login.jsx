@@ -49,7 +49,7 @@ const Login = () => {
    display: flex;
   justify-content: center;
    align-items: center;
-}                                                            \
+}                                                            
 
 .login-componenct {
   min-width: 300px;

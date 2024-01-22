@@ -2,6 +2,8 @@ import React from "react";
 import Blog from "../components/Blog";
 import quizImg from "../image/quiz_post.jpeg";
 import intro_uipath from "../image/intro_uipath.jpg";
+import intro_muk from "../image/Exploring UiPath Studio.png"
+import { Link } from "react-router-dom";
 const Events = () => {
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noreferrer");
@@ -24,7 +26,16 @@ const Events = () => {
           </div>
         </div>
         <div className="flex flex-wrap gap-8 justify-around">
-          <Blog
+        <Blog
+            imgs={intro_muk}
+            title={"Exploring UiPath Studio: A Beginner's guide to Automation"}
+            desc={
+              `An Online Webiner talk on "Exploring UiPath Studio: A Beginner's guide to Automation" by Mr. Mukesh Kala" `
+            }
+            dates={"Every Wednesday of Jan 2024"}
+            badgen={"Completed"}
+          />
+             <Link to="/events/quizquest/quizdashboard">  <Blog
             imgs={quizImg}
             title={"QuizQuest"}
             desc={
@@ -32,7 +43,8 @@ const Events = () => {
             }
             dates={"Every Wednesday of Jan 2024"}
             badgen={"Ongoing"}
-          />
+          /></Link>
+        
           <Blog
             imgs={intro_uipath}
             title={"An Introduction to Automation Using UiPath"}

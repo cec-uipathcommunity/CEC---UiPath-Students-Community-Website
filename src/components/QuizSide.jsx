@@ -9,7 +9,7 @@ function QuizSide({ onClickToggle, showContent }) {
            
             <div
              
-              className="inline-flex items-center justify-center py-3 text-purple-600 bg-white rounded-lg hover:bg-gray-300"
+              className="inline-flex items-center justify-center py-3 text-purple-600 bg-white rounded-lg hover:bg-gray-300 focus:text-gray-400"
             >
               <span className="sr-only">Dashboard</span>
               <svg

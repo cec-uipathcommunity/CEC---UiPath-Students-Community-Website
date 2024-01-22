@@ -29,11 +29,11 @@ const QuizNav = ({ userName }) => {
 
   const fetchNotifications = async () => {
     try {
-      const response = await fetch('REACT_APP_FETCH_BASE_URL/api/notifications');
+      const response = await fetch(`${process.env.REACT_APP_FETCH_BASE_URL}/api/notifications`);
       const data = await response.json();
       if (data.success) {
         setNotifications(data.notifications);
-        setLatestNotification(data.notifications[0]); 
+        setLatestNotification(data.notifications[0]);
       }
     } catch (error) {
       console.error('Error fetching notifications:', error);
@@ -42,7 +42,7 @@ const QuizNav = ({ userName }) => {
 
   // const addNotification = async (content) => {
   //   try {
-  //     const response = await fetch('REACT_APP_FETCH_BASE_URL/api/send-notification', {
+  //     const response = await fetch(`${process.env.REACT_APP_FETCH_BASE_URL}/api/send-notification`, {
   //       method: 'POST',
   //       headers: {
   //         'Content-Type': 'application/json',

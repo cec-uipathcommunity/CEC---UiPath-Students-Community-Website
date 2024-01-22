@@ -9,7 +9,7 @@ const LogoutConfirmationModal = ({ userName, onCancel, onConfirm }) => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  },);
+  }, []);
 
   const handleClickOutside = (event) => {
     if (modalRef.current && !modalRef.current.contains(event.target)) {
