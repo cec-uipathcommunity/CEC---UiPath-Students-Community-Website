@@ -6,7 +6,7 @@ function Countdown(props) {
   const [isTimerCompleted, setIsTimerCompleted] = useState(false);
 
   useEffect(() => {
-    const deadline = new Date(2024, 0, 21, 19, 25, 0); 
+    const deadline = new Date(2024, 0, 23, 19, 25, 0); 
     const intervalId = setInterval(() => {
       const currentTime = new Date();
       setIsTimerCompleted(currentTime >= deadline);
