@@ -4,18 +4,18 @@ const LogoutConfirmationModal = ({ userName, onCancel, onConfirm }) => {
   const modalRef = useRef();
 
   useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        onCancel();
+      }
+    };
+
     document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
-
-  const handleClickOutside = (event) => {
-    if (modalRef.current && !modalRef.current.contains(event.target)) {
-      onCancel();
-    }
-  };
+  }, [onCancel]); // Add onCancel to the dependency array
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
