@@ -34,7 +34,7 @@ function App() {
           <Route exact path="/quizquest/leaderboard" element={<QuizPanel/>}></Route>
           <Route exact path="/forum" element={<CommunityForum />}></Route>
           <Route exact path="/events" element={<Events />}></Route>
-          <Route exact path="/events/quizquest/week3" element={<ProtectedRoute><Quiz /></ProtectedRoute>}></Route>
+          <Route exact path="/events/quizquest.week3" element={<ProtectedRoute><Quiz /></ProtectedRoute>}></Route>
           <Route exact path="/ourteam" element={<OurTeam />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/comingsoon" element={<ComingSoon />}></Route>
