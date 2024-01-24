@@ -164,7 +164,7 @@ function DashboardQuiz(props) {
               <div className="mr-6">
                 <h1 className="text-4xl font-semibold mb-2">Quiz Quest Dashboard</h1>
               </div>
-              {(error && <div className="error">{error}</div>) || (<h1 className="text-sm font-semibold mb-2">Data Upto Quiz Quest Week 2</h1>)}
+              {(error && <div className="error">{error}</div>) || (<h1 className="text-sm font-semibold mb-2">Data Upto Quiz Quest {latestWeekNumber}</h1>)}
               {/* <div className="flex flex-wrap items-start justify-end -mb-3">
           <button className="inline-flex px-5 py-3 text-purple-600 hover:text-purple-700 focus:text-purple-700 hover:bg-purple-100 focus:bg-purple-100 border border-purple-600 rounded-md mb-3">
             <svg
@@ -207,11 +207,11 @@ function DashboardQuiz(props) {
                   <button
                     className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                     onClick={toggleDivs}>
-                    Start Quiz Week 4
+                    Start Quiz Week 5
 
                   </button>
                   <div><span className="block text-gray-500">
-                    on 24-01-2024
+                    on 31-01-2024
                   </span></div>
                 </div>
               </div>

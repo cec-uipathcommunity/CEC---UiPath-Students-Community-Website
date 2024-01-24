@@ -17,7 +17,7 @@ import OurTeam from "./screen/OurTeam"
 // import Form from "../src/components/form";
 import QuizPanel from "../src/components/quizPanel"
 import CommunityForum from "../src/screen/CommunityForum"
-// import Quiz from "../src/screen/Quiz1"
+import PQuiz from "../src/screen/Quizzz"
 
 // import AdminDashboard from "./screen/AdminDashboard";
 
@@ -30,7 +30,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Landing />}></Route>
           {/* <Route exact path="/joincommunity" element={<Form />}></Route> */}
-          <Route exact path="/events/quizquest/praticequiz" element={<ProtectedRoute><Quiz /></ProtectedRoute>}></Route>
+          <Route exact path="/events/quizquest/praticequiz" element={<ProtectedRoute><PQuiz /></ProtectedRoute>}></Route>
           <Route exact path="/events/quizquest/leaderboard" element={<QuizPanel/>}></Route>
           <Route exact path="/quizquest/leaderboard" element={<QuizPanel/>}></Route>
           <Route exact path="/forum" element={<CommunityForum />}></Route>
