@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useCallback } from 'react';
 
 const Quizzz = () => {
   const [quizState, setQuizState] = useState('start'); // 'start', 'quiz', 'result'
-  const [questions, setQuestions] = useState([
+  const [questions] = useState([
     {
       "question": "What does RPA stand for?",
       "options": ["Robotic Processing Automation", "Robotic Process Automation", "Real-time Process Automation", "Repetitive Process Automation"],
@@ -144,16 +144,16 @@ const Quizzz = () => {
       transition: background-color 0.3s ease-in-out;
     }
 
-    .option:hover {
-      background-color: #e0e0e0; /* Change to your preferred hover background color */
-      color: #333; /* Change to your preferred hover text color */
-    }
-    
-    .option.selected:hover {
-      background-color: #007BFF; /* Change to your preferred selected hover background color */
-      color: #fff; /* Change to your preferred selected hover text color */
-    }
-    
+   .option:hover {
+  background-color: #e0e0e0; /* Change to your preferred hover background color */
+  color: #333; /* Change to your preferred hover text color */
+}
+
+.option.selected:hover {
+  background-color: #007BFF; /* Change to your preferred selected hover background color */
+  color: #fff; /* Change to your preferred selected hover text color */
+}
+
 
     .selected {
       background-color: #3498db; /* Change to your preferred background color */
@@ -250,11 +250,12 @@ const Quizzz = () => {
     handleAnswerSubmission();
   };
 
-  const nextQuestion = () => {
+  const nextQuestion = useCallback(() => {
     setCurrentQuestion((prev) => (prev + 1) % questions.length);
     resetTimer();
     setSelectedAnswer(null);
-  };
+  }, [questions.length]);
+
 
   const handleOptionClick = (selectedOption) => {
     setSelectedAnswer(selectedOption);
@@ -311,9 +312,10 @@ const Quizzz = () => {
     const realTimeQuestionChangeTimer = setInterval(() => {
       nextQuestion();
     }, 30000); // Change question every 30 seconds (adjust as needed)
-
+  
     return () => clearInterval(realTimeQuestionChangeTimer);
-  }, [currentQuestion]);
+  }, [currentQuestion, nextQuestion]);
+  
 
   return (
     <>
