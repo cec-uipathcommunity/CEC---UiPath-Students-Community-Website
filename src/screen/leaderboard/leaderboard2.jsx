@@ -250,7 +250,7 @@ td {
     window.location.href = '/events/quizquest/quizdashboard';
   };
   const goprev = () => {
-    window.location.href = '/events/quizquest/leaderboard1'; 
+    window.location.href = '/events/quizquest/leaderboard3'; 
   };
   return (
     <div>
