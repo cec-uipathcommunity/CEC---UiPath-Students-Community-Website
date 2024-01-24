@@ -207,7 +207,7 @@ function DashboardQuiz(props) {
                   <button
                     className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                     onClick={toggleDivs}>
-                    Start Quiz Week 3
+                    Start Quiz Week 4
 
                   </button>
                   <div><span className="block text-gray-500">
