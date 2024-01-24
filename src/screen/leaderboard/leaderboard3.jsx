@@ -1,5 +1,5 @@
 import React from 'react';
-const Leaderboard2 = () => {
+const Leaderboard3 = () => {
   const styles = `
   * {
   font-size: 62, 5%;
@@ -258,43 +258,43 @@ td {
       <main className="leaderboard-root">
       <header id="header">
         <h1>Leaderboard</h1>
-        <h3>Quiz Quest - Week 02</h3>
+        <h3>Quiz Quest - Week 03</h3>
       </header>
       <div id="leaderboard">
         <div className="ribbon"></div>
         <table>
           <tr>
             <td className="number">1</td>
-            <td className="name">Srushti Rajendra Naik</td>
+            <td className="name">Pradyumna Bhat</td>
             <td className="points">
-            9/10 - 1:40
+            9/10 - 1:50
               <img className="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal" />
             </td>
           </tr>
           <tr>
             <td className="number">2</td>
-            <td className="name">Bhoomika Chandrakanth Kamat</td>
-            <td className="points">7/10 - 1:32</td>
+            <td className="name">Praharsh T</td>
+            <td className="points">9/10 - 2:04</td>
           </tr>
           <tr>
             <td className="number">3</td>
-            <td className="name">Praharsh T</td>
-            <td className="points">7/10 - 1:40</td>
+            <td className="name">Pavitra Udaya Kamat</td>
+            <td className="points">8/10 - 1:28</td>
           </tr>
           <tr>
             <td className="number">4</td>
-            <td className="name">Rakshitha B Bhajentri</td>
-            <td className="points">7/10 - 1:42</td>
+            <td className="name">Srushti Rajendra Naik</td>
+            <td className="points">8/10 - 1:36</td>
           </tr>
           <tr>
             <td className="number">5</td>
-            <td className="name">P Shreekar Shenoy</td>
-            <td className="points">7/10 - 1:52</td>
+            <td className="name">Bhuvana</td>
+            <td className="points">8/10 - 1:53</td>
           </tr>
         </table>
          <div id="buttons">
           <button onClick={goToHomePage} className="exit">Exit</button>
-<button onClick={goprev} className="continue">Week 03</button> 
+<button onClick={goprev} className="continue">Week 01</button> 
 
         </div> 
       </div>
@@ -303,4 +303,4 @@ td {
   );
 };
 
-export default Leaderboard2;
+export default Leaderboard3;

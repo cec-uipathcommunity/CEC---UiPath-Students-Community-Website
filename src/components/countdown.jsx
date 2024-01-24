@@ -6,7 +6,7 @@ function Countdown(props) {
   const [isTimerCompleted, setIsTimerCompleted] = useState(false);
 
   useEffect(() => {
-    const deadline = new Date(2024, 0, 23, 19, 25, 0); 
+    const deadline = new Date(2024, 0, 24, 19, 25, 0); 
     const intervalId = setInterval(() => {
       const currentTime = new Date();
       setIsTimerCompleted(currentTime >= deadline);
@@ -91,7 +91,7 @@ function Countdown(props) {
       <style>{styles}</style>
       <div className="wrapper">
 
-        <div className='ttm'><Timer deadline={new Date(2024, 0, 23, 19, 30, 0)} /></div>
+        <div className='ttm'><Timer deadline={new Date(2024, 0, 24, 19, 30, 0)} /></div>
         <div className="buttons">
           <button
             className="return-btn"
@@ -100,7 +100,7 @@ function Countdown(props) {
             Return to Dashboard
           </button>
           {isTimerCompleted && (
-            <Link to="/events/quizquest.week3" className="join-btn">
+            <Link to="/events/quizquest/.week4" className="join-btn">
             Join
           </Link>
           )}

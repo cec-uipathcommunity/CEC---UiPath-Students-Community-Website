@@ -11,6 +11,7 @@ import ComingSoon from "./screen/ComingSoon";
 import QuizDashboard from "./screen/QuizDashboard";
 import Leaderboard1 from "./screen/leaderboard/leaderboard1";
 import Leaderboard2 from "./screen/leaderboard/leaderboard2";
+import Leaderboard3 from "./screen/leaderboard/leaderboard3";
 // import ChatBot from "./components/ChatBot";
 import OurTeam from "./screen/OurTeam"
 // import Form from "../src/components/form";
@@ -34,13 +35,14 @@ function App() {
           <Route exact path="/quizquest/leaderboard" element={<QuizPanel/>}></Route>
           <Route exact path="/forum" element={<CommunityForum />}></Route>
           <Route exact path="/events" element={<Events />}></Route>
-          <Route exact path="/events/quizquest.week3" element={<ProtectedRoute><Quiz /></ProtectedRoute>}></Route>
+          <Route exact path="/events/quizquest/.week4" element={<ProtectedRoute><Quiz /></ProtectedRoute>}></Route>
           <Route exact path="/ourteam" element={<OurTeam />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/comingsoon" element={<ComingSoon />}></Route>
           {/* <Route path="/admin/adddetails" element={<AdminDashboard />} /> */}
           <Route exact path="/events/quizquest/leaderboard1" element={<Leaderboard1/>}></Route>
           <Route exact path="/events/quizquest/leaderboard2" element={<Leaderboard2/>}></Route>
+          <Route exact path="/events/quizquest/leaderboard3" element={<Leaderboard3/>}></Route>
           <Route path="/events/quizquest/quizdashboard" element={<ProtectedRoute><QuizDashboard /></ProtectedRoute>} />
           <Route exact path="/login" element={<Login />}></Route>
           <Route path="*" element={<Error />} />

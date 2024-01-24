@@ -125,7 +125,13 @@ function DashboardQuiz(props) {
       { name: 'Praharsh T', score: '7/10 ', timeTaken: '1:40' },
       { name: 'Rakshitha B Bhajentri', score: '7/10 ', timeTaken: '1:42' },
       { name: 'P Shreekar Shenoy', score: '7/10 ', timeTaken: '1:52' },
-    ],
+    ],  'Week 3': [
+      { name: 'Pradyumna Bhat', score: '9/10 ', timeTaken: '1:50' },
+      { name: 'Praharsh T', score: '9/10 ', timeTaken: '2:04' },
+      { name: 'Pavitra Udaya Kamat', score: '8/10 ', timeTaken: '1:28' },
+      { name: 'Srushti Rajendra Naik', score: '8/10 ', timeTaken: '1:36' },
+      { name: 'Bhuvana', score: '8/10 ', timeTaken: '1:53' },
+    ]
   };
 
 
@@ -205,7 +211,7 @@ function DashboardQuiz(props) {
 
                   </button>
                   <div><span className="block text-gray-500">
-                    on 23-01-2024
+                    on 24-01-2024
                   </span></div>
                 </div>
               </div>
@@ -420,6 +426,12 @@ function DashboardQuiz(props) {
                           >
                             Week 2
                           </button>
+                          <button
+                            className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                            onClick={() => handleWeekChange('Week 3')}
+                          >
+                            Week 3
+                          </button>
                         </div>
                       </div>
                     )}
@@ -455,7 +467,7 @@ function DashboardQuiz(props) {
                   </svg>
                 </div>
                 <div>
-                  <span className="block text-2xl font-bold">3</span>
+                  <span className="block text-2xl font-bold">2</span>
                   <span className="block text-gray-500">No. of Quiz Left</span>
                 </div>
               </div>
