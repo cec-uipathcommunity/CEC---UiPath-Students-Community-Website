@@ -467,7 +467,7 @@ function DashboardQuiz(props) {
                   </svg>
                 </div>
                 <div>
-                  <span className="block text-2xl font-bold">2</span>
+                  <span className="block text-2xl font-bold">1</span>
                   <span className="block text-gray-500">No. of Quiz Left</span>
                 </div>
               </div>
