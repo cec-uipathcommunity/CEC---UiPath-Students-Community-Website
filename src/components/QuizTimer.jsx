@@ -14,40 +14,40 @@ const QuizTimer = () => {
         setTimeout(() => {
           setShowTimer(true);
         }, 3000); 
-      } else if (currentMinute ===53 ) {
+      } else if (currentMinute ===51 ) {
         setMessage('1st Question');
-      } else if (currentMinute === 54) {
+      } else if (currentMinute === 52) {
         setMessage('2nd Question');
         
-      }else if (currentMinute === 55) {
+      }else if (currentMinute === 53) {
         setMessage('3rd Question');
         
-      }else if (currentMinute === 56) {
+      }else if (currentMinute === 54) {
         setMessage('4th Question');
         
-      }else if (currentMinute === 57) {
+      }else if (currentMinute === 55) {
         setMessage('5th Question');
         
-      }else if (currentMinute === 58) {
+      }else if (currentMinute === 56) {
         setMessage('6th Question');
         
       }
-      else if (currentMinute === 59) {
+      else if (currentMinute === 57) {
         setMessage('7th Question');
         
       }
-      else if (currentMinute === 0) {
+      else if (currentMinute === 58) {
         setMessage('8th Question');
         
       }
-      else if (currentMinute === 1) {
+      else if (currentMinute === 59) {
         setMessage('9th Question');
         
       }
-      else if (currentMinute === 2) {
+      else if (currentMinute === 0) {
         setMessage('10th Question');
         
-      } else if (currentMinute === 3) {
+      } else if (currentMinute === 1) {
         setMessage('Thank you for attending');
         clearInterval(intervalId); 
       }
