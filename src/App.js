@@ -12,6 +12,7 @@ import QuizDashboard from "./screen/QuizDashboard";
 import Leaderboard1 from "./screen/leaderboard/leaderboard1";
 import Leaderboard2 from "./screen/leaderboard/leaderboard2";
 import Leaderboard3 from "./screen/leaderboard/leaderboard3";
+import Leaderboard4 from "./screen/leaderboard/leaderboard4";
 // import ChatBot from "./components/ChatBot";
 import OurTeam from "./screen/OurTeam"
 // import Form from "../src/components/form";
@@ -43,6 +44,7 @@ function App() {
           <Route exact path="/events/quizquest/leaderboard1" element={<Leaderboard1/>}></Route>
           <Route exact path="/events/quizquest/leaderboard2" element={<Leaderboard2/>}></Route>
           <Route exact path="/events/quizquest/leaderboard3" element={<Leaderboard3/>}></Route>
+          <Route exact path="/events/quizquest/leaderboard4" element={<Leaderboard4/>}></Route>
           <Route path="/events/quizquest/quizdashboard" element={<ProtectedRoute><QuizDashboard /></ProtectedRoute>} />
           <Route exact path="/login" element={<Login />}></Route>
           <Route path="*" element={<Error />} />

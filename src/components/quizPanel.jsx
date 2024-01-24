@@ -165,12 +165,42 @@ a.card {
           <img src="https://prime-event.com.ua/wp-content/webp-express/webp-images/uploads/2020/08/Kviz.jpg.webp" alt="img" className="card-img"/>
           <h2 className="card-title">Week 02</h2>
           <div className="speaker-role">
-             <p><b>Participants: 61 </b></p>
+             <p><b>Participants: 79 </b></p>
               <p><b>10/01/2024</b></p>
             </div>
           <div className="card-title">
             <div className="card-title">
               <p><a href="/events/quizquest/leaderboard2">View Leaderboard</a></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div className="card-wrap">
+        <a href="/events/quizquest/leaderboard2" className="card">
+          <img src="https://prime-event.com.ua/wp-content/webp-express/webp-images/uploads/2020/08/Kviz.jpg.webp" alt="img" className="card-img"/>
+          <h2 className="card-title">Week 03</h2>
+          <div className="speaker-role">
+             <p><b>Participants: 51 </b></p>
+              <p><b>23/01/2024</b></p>
+            </div>
+          <div className="card-title">
+            <div className="card-title">
+              <p><a href="/events/quizquest/leaderboard3">View Leaderboard</a></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div className="card-wrap">
+        <a href="/events/quizquest/leaderboard2" className="card">
+          <img src="https://prime-event.com.ua/wp-content/webp-express/webp-images/uploads/2020/08/Kviz.jpg.webp" alt="img" className="card-img"/>
+          <h2 className="card-title">Week 04</h2>
+          <div className="speaker-role">
+             <p><b>Participants: 56 </b></p>
+              <p><b>24/01/2024</b></p>
+            </div>
+          <div className="card-title">
+            <div className="card-title">
+              <p><a href="/events/quizquest/leaderboard4">View Leaderboard</a></p>
             </div>
           </div>
         </a>

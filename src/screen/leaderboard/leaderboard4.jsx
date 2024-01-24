@@ -1,5 +1,5 @@
 import React from 'react';
-const Leaderboard3 = () => {
+const Leaderboard4 = () => {
   const styles = `
   * {
   font-size: 62, 5%;
@@ -250,7 +250,7 @@ td {
     window.location.href = '/events/quizquest/quizdashboard';
   };
   const goprev = () => {
-    window.location.href = '/events/quizquest/leaderboard4'; 
+    window.location.href = '/events/quizquest/leaderboard1'; 
   };
   return (
     <div>
@@ -258,38 +258,38 @@ td {
       <main className="leaderboard-root">
       <header id="header">
         <h1>Leaderboard</h1>
-        <h3>Quiz Quest - Week 03</h3>
+        <h3>Quiz Quest - Week 04</h3>
       </header>
       <div id="leaderboard">
         <div className="ribbon"></div>
         <table>
           <tr>
             <td className="number">1</td>
-            <td className="name">Pradyumna Bhat</td>
+            <td className="name">Shreekar Shenoy</td>
             <td className="points">
-            9/10 - 1:50
+            9/10 - 2:01
               <img className="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal" />
             </td>
           </tr>
           <tr>
             <td className="number">2</td>
-            <td className="name">Praharsh T</td>
-            <td className="points">9/10 - 2:04</td>
+            <td className="name">Gouthami</td>
+            <td className="points">8/10 - 1:37</td>
           </tr>
           <tr>
             <td className="number">3</td>
-            <td className="name">Pavitra Udaya Kamat</td>
-            <td className="points">8/10 - 1:28</td>
+            <td className="name">Priyanka H S</td>
+            <td className="points">8/10 - 1:54</td>
           </tr>
           <tr>
             <td className="number">4</td>
-            <td className="name">Srushti Rajendra Naik</td>
-            <td className="points">8/10 - 1:36</td>
+            <td className="name">Shraddha K</td>
+            <td className="points">8/10 - 1:58</td>
           </tr>
           <tr>
             <td className="number">5</td>
-            <td className="name">Bhuvana</td>
-            <td className="points">8/10 - 1:53</td>
+            <td className="name">Rinisha S Prabhu</td>
+            <td className="points">7/10 - 1:39</td>
           </tr>
         </table>
          <div id="buttons">
@@ -303,4 +303,4 @@ td {
   );
 };
 
-export default Leaderboard3;
+export default Leaderboard4;
