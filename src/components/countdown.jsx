@@ -100,7 +100,7 @@ function Countdown(props) {
             Return to Dashboard
           </button>
           {isTimerCompleted && (
-            <Link to="/events/quizquest/.week4" className="join-btn">
+            <Link to="/events/quizquest/week5" className="join-btn">
             Join
           </Link>
           )}
