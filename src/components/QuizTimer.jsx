@@ -9,42 +9,42 @@ const QuizTimer = () => {
     const intervalId = setInterval(() => {
       const now = new Date();
       const currentMinute = now.getMinutes();
-      if (currentMinute === 46) {
-        setMessage('Welcome to Quiz Quest! Week 04');
+      if (currentMinute === 30) {
+        setMessage('Welcome to Quiz Quest! Week 05');
         setTimeout(() => {
           setShowTimer(true);
         }, 3000); 
-      } else if (currentMinute ===50 ) {
+      } else if (currentMinute ===35 ) {
         setMessage('1st Question');
-      } else if (currentMinute === 51) {
+      } else if (currentMinute === 36) {
         setMessage('2nd Question');
         
-      }else if (currentMinute === 52) {
+      }else if (currentMinute === 37) {
         setMessage('3rd Question');
         
-      }else if (currentMinute === 53) {
+      }else if (currentMinute === 38) {
         setMessage('4th Question');
         
-      }else if (currentMinute === 54) {
+      }else if (currentMinute === 39) {
         setMessage('5th Question');
         
-      }else if (currentMinute === 55) {
+      }else if (currentMinute === 40) {
         setMessage('6th Question');
         
       }
-      else if (currentMinute === 56) {
+      else if (currentMinute === 41) {
         setMessage('7th Question');
         
       }
-      else if (currentMinute === 57) {
+      else if (currentMinute === 42) {
         setMessage('8th Question');
         
       }
-      else if (currentMinute === 58) {
+      else if (currentMinute === 43) {
         setMessage('9th Question');
         
       }
-      else if (currentMinute === 59) {
+      else if (currentMinute === 44) {
         setMessage('10th Question');
         
       } else if (currentMinute === 0) {
