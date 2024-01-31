@@ -19,7 +19,7 @@ import OurTeam from "./screen/OurTeam"
 import QuizPanel from "../src/components/quizPanel"
 import CommunityForum from "../src/screen/CommunityForum"
 import PQuiz from "../src/screen/Quizzz"
-import Quiz from '../src/screen/Quiz1.jsx'
+// import Quiz from '../src/screen/Quiz1.jsx'
 // import AdminDashboard from "./screen/AdminDashboard";
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
           <Route exact path="/quizquest/leaderboard" element={<QuizPanel/>}></Route>
           <Route exact path="/forum" element={<CommunityForum />}></Route>
           <Route exact path="/events" element={<Events />}></Route>
-           <Route exact path="/events/quizquest/week5" element={<ProtectedRoute><Quiz /></ProtectedRoute>}></Route>
+           {/* <Route exact path="/events/quizquest/week5" element={<ProtectedRoute><Quiz /></ProtectedRoute>}></Route> */}
           <Route exact path="/ourteam" element={<OurTeam />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/comingsoon" element={<ComingSoon />}></Route>

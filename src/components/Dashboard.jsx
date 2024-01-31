@@ -186,7 +186,7 @@ function DashboardQuiz(props) {
         </div> */}
             </div>
             <section className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-              <div className="flex items-center p-8 bg-white shadow rounded-lg">
+              {/* <div className="flex items-center p-8 bg-white shadow rounded-lg">
                 <div className="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-purple-600 bg-purple-100 rounded-full mr-6">
                   <svg
                     aria-hidden="true"
@@ -214,7 +214,7 @@ function DashboardQuiz(props) {
                     on 31-01-2024
                   </span></div>
                 </div>
-              </div>
+              </div> */}
               
 
               <div className="flex items-center p-8 bg-white shadow rounded-lg">
